@@ -5,8 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>Detektif Huruf dan Angka - Menebali & Menulis Huruf</title>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPQVLF41YS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-DPQVLF41YS');
+</script>
+
 <script src="https://cdn.tailwindcss.com"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Quicksand:wght@600;700;800&display=swap" rel="stylesheet">
@@ -72,7 +80,7 @@
         <span id="star-count" class="font-black text-amber-900 text-sm sm:text-base">0</span>
       </div>
       <button onclick="openBook()" class="bg-gradient-to-r from-emerald-500 to-lime-500 hover:from-emerald-600 hover:to-lime-600 text-white font-extrabold px-3 py-1.5 rounded-2xl shadow border-b-4 border-emerald-700 active:scale-95 transition text-xs sm:text-sm flex items-center gap-1.5">
-        <i class="fa-solid fa-magnifying-glass"></i>
+        <span>🔍</span>
         <span class="hidden sm:inline">Koleksi</span>
       </button>
     </div>
@@ -100,7 +108,7 @@
         </div>
       </div>
       <button onclick="playItemAudio()" class="bg-sky-500 hover:bg-sky-600 text-white font-extrabold px-3 py-2 rounded-2xl shadow border-b-4 border-sky-700 active:scale-95 transition text-xs sm:text-sm flex items-center gap-1.5">
-        <i class="fa-solid fa-volume-high text-sm"></i>
+        <span class="text-sm">🔊</span>
         <span class="hidden sm:inline">Dengar</span>
       </button>
     </div>
@@ -117,7 +125,7 @@
 
       <div class="absolute top-3 right-3 bg-white/95 backdrop-blur border-2 border-emerald-200 px-3 py-1.5 rounded-2xl shadow flex items-center gap-2 z-20">
         <button onclick="toggleHighContrast()" title="Ubah Kontras Huruf" class="text-xs font-bold bg-emerald-100 hover:bg-emerald-200 text-emerald-800 px-2 py-1 rounded-xl transition flex items-center gap-1 border border-emerald-300">
-          <i class="fa-solid fa-eye"></i> <span class="hidden sm:inline">Kontras</span>
+          <span>👁️</span> <span class="hidden sm:inline">Kontras</span>
         </button>
         <div class="w-16 sm:w-24 bg-gray-200 rounded-full h-3 overflow-hidden border border-gray-300">
           <div id="progress-bar-fill" class="bg-gradient-to-r from-yellow-400 to-emerald-500 h-full w-0 transition-all duration-300 rounded-full"></div>
@@ -130,7 +138,7 @@
         <h3 class="font-title text-2xl sm:text-3xl font-black text-yellow-300 mb-1">HEBAT SEKALI!</h3>
         <p id="success-text" class="text-sm sm:text-base text-center font-bold mb-4 text-emerald-100">Hurufmu tumbuh mekar! (+3 ⭐)</p>
         <button onclick="nextItem()" class="bg-yellow-400 hover:bg-yellow-300 text-emerald-900 font-extrabold px-6 py-3 rounded-2xl shadow-lg border-b-4 border-yellow-600 active:scale-95 transition text-base flex items-center gap-2">
-          Lanjut Huruf Berikutnya <i class="fa-solid fa-arrow-right"></i>
+          Lanjut Huruf Berikutnya <span>➡️</span>
         </button>
       </div>
     </div>
@@ -145,13 +153,13 @@
       </div>
       <div class="flex items-center gap-2">
         <button onclick="clearCanvas()" class="bg-amber-500 hover:bg-amber-600 text-white font-bold px-3 py-2 rounded-2xl shadow border-b-4 border-amber-700 active:scale-95 transition text-xs sm:text-sm flex items-center gap-1">
-          <i class="fa-solid fa-eraser"></i> Hapus
+          <span>🧹</span> Hapus
         </button>
         <button onclick="manualCheckCompletion()" class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-3 py-2 rounded-2xl shadow border-b-4 border-emerald-700 active:scale-95 transition text-xs sm:text-sm flex items-center gap-1">
-          <i class="fa-solid fa-circle-check"></i> Selesai
+          <span>✅</span> Selesai
         </button>
         <button onclick="nextItem()" class="bg-lime-600 hover:bg-lime-700 text-white font-bold px-3 py-2 rounded-2xl shadow border-b-4 border-lime-900 active:scale-95 transition text-xs sm:text-sm flex items-center gap-1">
-          Lewati <i class="fa-solid fa-forward"></i>
+          Lewati <span>⏭️</span>
         </button>
       </div>
     </div>
